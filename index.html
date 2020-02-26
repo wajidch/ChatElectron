@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
 <title>electron chat</title>
+<!-- https://github.com/duytq94/reactjs-chat-demo/tree/build-electron -->
 <script>
 window.$ = require("jquery");
 $(function() {
@@ -12,17 +13,19 @@ $(function() {
     return false;
   });
   socket.on('msg', function(data) {
-    $('div').prepend("Me :"+data + '<br>');
+    $('div').prepend(`Me :${data}
+    
+    <div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>${data}</p>
+  <span clas 	s="time-right">11:00</span>
+</div>`);
   });
 });
 </script>
 <form><input></form>
 
-<div class="container darker">
-  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-  <p></p>
-  <span class="time-left">11:01</span>
-</div>
-<div>
+
+<div style="background-color:grey;">
 
 </div>

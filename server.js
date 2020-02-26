@@ -4,3 +4,4 @@ io.sockets.on('connection', function(socket) {
     io.sockets.emit('msg', data);
   });
 });
+
